@@ -117,184 +117,6 @@
           animation: zoom-out 3s linear infinite;
 }
 
-.wrapContent .infor_specialization {
-  height: 100%;
-  background-color: red;
-}
-
-.wrapContent .infor_specialization .infor_specialization_title {
-  text-align: center;
-}
-
-.wrapContent .infor_specialization .showDetail_infor_specialization {
-  width: 100%;
-  height: 200px;
-  background-color: yellow;
-  border-radius: 50%;
-  position: relative;
-}
-
-.wrapContent .infor_specialization .showDetail_infor_specialization .showDetail_icon {
-  position: absolute;
-  top: 0%;
-  font-size: 80px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-animation: movedownIcon 1s infinite ease;
-          animation: movedownIcon 1s infinite ease;
-}
-
-.wrapContent .infor_specialization .showDetail_infor_specialization .showDetail_sughest {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  text-align: center;
-}
-
-.wrapContent .infor_specialization .infor_specialization_list .infor_specialization_item {
-  list-style: none;
-}
-
-.wrapContent .infor_chart {
-  height: 100%;
-  background-color: green;
-}
-
-.wrapContent .infor_chart .css_col {
-  position: relative;
-}
-
-.wrapContent .infor_chart .css_col:hover .infor_hover {
-  display: block;
-}
-
-.wrapContent .infor_chart .css_col .img_col {
-  -webkit-animation: scale 3s ease;
-          animation: scale 3s ease;
-  position: relative;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.wrapContent .infor_chart .css_col .img_col img {
-  width: 100%;
-  border-radius: 20px;
-}
-
-.wrapContent .infor_chart .css_col .img_col .infor_hover {
-  background-color: #ccc;
-  color: #000;
-  text-align: center;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  -webkit-transform: translateX(-505);
-          transform: translateX(-505);
-  width: 100%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  -webkit-animation: slide_top 0.3s;
-          animation: slide_top 0.3s;
-}
-
-.wrapContent .infor_chart .css_col .img_col .infor_hover span {
-  display: block;
-}
-
-.wrapContent .infor_chart .wrap_infor_details {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: none;
-}
-
-.wrapContent .infor_chart .wrap_infor_details .infor_details {
-  position: relative;
-  margin: auto;
-  width: 400px;
-  height: 400px;
-  background-color: #dec315;
-  overflow: hidden;
-}
-
-.wrapContent .infor_chart .wrap_infor_details .infor_details .nameUniver {
-  display: block;
-  font-weight: 900;
-  font-size: 40px;
-  letter-spacing: 13px;
-  position: absolute;
-  margin-left: 16px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  color: red;
-}
-
-.wrapContent .infor_chart .wrap_infor_details .infor_details .nameUniver::before {
-  content: "";
-  position: absolute;
-  border-left: 1px solid red;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #dec315;
-  -webkit-animation: text_slide 2s steps(4) infinite;
-          animation: text_slide 2s steps(4) infinite;
-}
-
-.wrapContent .infor_chart .wrap_infor_details .infor_details .infor_list {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapContent .infor_chart .wrap_infor_details .infor_details .infor_list .infor_iteam {
-  list-style: none;
-}
-
-.wrapContent .infor_chart .wrap_infor_details .infor_details .infor_avatar {
-  position: absolute;
-  left: 50%;
-  top: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
-
-.wrapContent .infor_chart .wrap_infor_details .infor_details .infor_avatar img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .choiceAndSearch {
   width: 100%;
   display: -webkit-box;
@@ -303,11 +125,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 200px;
-  margin-bottom: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
 }
 
 .choiceAndSearch .iconChoice {
@@ -362,6 +183,7 @@
 .choiceAndSearch .searchInfor {
   width: 641px;
   height: 48px;
+  margin-left: 100px;
   position: relative;
 }
 
@@ -397,5 +219,165 @@
 .choiceAndSearch .searchInfor .iconSearch .bx-search {
   font-size: 20px;
   color: #fff;
+}
+
+.infor_teacher h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  color: #112437;
+  text-align: center;
+}
+
+.infor_teacher {
+  position: relative;
+}
+
+.infor_teacher .infor_teacher_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  /* shadow */
+  -webkit-box-shadow: 0px 15px 50px 5px rgba(89, 156, 255, 0.1);
+          box-shadow: 0px 15px 50px 5px rgba(89, 156, 255, 0.1);
+  border-radius: 8px;
+  height: 282px;
+}
+
+.infor_teacher img.imgOnDeskTop {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+}
+
+.infor_teacher .nameTeacher {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  margin-top: 20px;
+  text-align: center;
+  color: #112437;
+}
+
+.infor_teacher .majorTeacher {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 32px;
+  text-align: center;
+  /* gray/600 */
+  color: #52525b;
+}
+
+.infor_teacher .wrapDetail {
+  background-color: rgba(89, 156, 255, 0.1);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.infor_teacher .inforDetail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px;
+  width: 380px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 15px 53px 45px rgba(89, 156, 255, 0.1);
+          box-shadow: 0px 15px 53px 45px rgba(89, 156, 255, 0.1);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infor_teacher .inforDetail h2 {
+  margin-top: 30px;
+}
+
+.infor_teacher .inforDetail span {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #52525b;
+}
+
+.infor_teacher .inforDetail .position {
+  margin-top: 30px;
+}
+
+.infor_teacher .inforDetail .ortherInfor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.infor_teacher .inforDetail .ortherInfor .ortherInfor_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.infor_teacher .inforDetail .ortherInfor .ortherInfor_item .num {
+  margin-top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+}
+
+.infor_teacher .inforDetail p {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

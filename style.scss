@@ -9,6 +9,8 @@
 .no--padding {
   padding: 0;
 }
+.col-3.myCssCol {
+}
 .banerMulti {
   width: 100%;
   height: 80vh;
@@ -73,164 +75,13 @@
     }
   }
 }
-.wrapContent {
-  .infor_specialization {
-    height: 100%;
-
-    background-color: red;
-    .infor_specialization_title {
-      text-align: center;
-    }
-    .showDetail_infor_specialization {
-      width: 100%;
-      height: 200px;
-      background-color: yellow;
-      border-radius: 50%;
-      position: relative;
-      .showDetail_icon {
-        position: absolute;
-        top: 0%;
-        font-size: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-        animation: movedownIcon 1s infinite ease;
-      }
-      .showDetail_sughest {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-      }
-    }
-    .infor_specialization_list {
-      .infor_specialization_item {
-        list-style: none;
-      }
-    }
-  }
-
-  .infor_chart {
-    height: 100%;
-    background-color: green;
-
-    .css_col {
-      position: relative;
-      &:hover {
-        .infor_hover {
-          display: block;
-        }
-      }
-      .img_col {
-        animation: scale 3s ease;
-        position: relative;
-        width: 100%;
-        border-radius: 20px;
-        img {
-          width: 100%;
-          border-radius: 20px;
-        }
-        .infor_hover {
-          // display: nbne;
-          background-color: #ccc;
-          color: #000;
-          text-align: center;
-          position: absolute;
-          bottom: 0px;
-          left: 0;
-          transform: translateX(-505);
-          width: 100%;
-
-          border-bottom-left-radius: 20px;
-          border-bottom-right-radius: 20px;
-          animation: slide_top 0.3s;
-          span {
-            display: block;
-          }
-        }
-      }
-    }
-    .wrap_infor_details {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      display: none;
-      // background-color: rgb(193, 186, 186);
-      .infor_details {
-        position: relative;
-        margin: auto;
-        width: 400px;
-        height: 400px;
-        background-color: rgb(222, 195, 21);
-        overflow: hidden;
-        .nameUniver {
-          display: block;
-          font-weight: 900;
-          font-size: 40px;
-          letter-spacing: 13px;
-          position: absolute;
-          margin-left: 16px;
-          left: 50%;
-          transform: translateX(-50%);
-          color: red;
-          &::before {
-            content: "";
-            position: absolute;
-            border-left: 1px solid red;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgb(222, 195, 21);
-            animation: text_slide 2s steps(4) infinite;
-          }
-        }
-        .infor_list {
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          .infor_iteam {
-            list-style: none;
-          }
-        }
-        .infor_avatar {
-          position: absolute;
-          left: 50%;
-          top: 50px;
-          transform: translateX(-50%);
-          border-radius: 50%;
-          width: 150px;
-          height: 150px;
-          img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-
-            object-fit: cover;
-          }
-        }
-      }
-    }
-  }
-}
 
 .choiceAndSearch {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 200px;
-  margin-bottom: 200px;
+  justify-content: center;
+  margin-bottom: 50px;
   .iconChoice {
     position: relative;
     width: 48px;
@@ -269,6 +120,7 @@
   .searchInfor {
     width: 641px;
     height: 48px;
+    margin-left: 100px;
     position: relative;
     input {
       width: 100%;
@@ -294,6 +146,132 @@
         font-size: 20px;
         color: #fff;
       }
+    }
+  }
+}
+.infor_teacher {
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #112437;
+    text-align: center;
+  }
+}
+.infor_teacher {
+  // background-color: red;
+  position: relative;
+  .infor_teacher_item {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    align-items: center;
+
+    background: #ffffff;
+    /* shadow */
+
+    box-shadow: 0px 15px 50px 5px rgba(89, 156, 255, 0.1);
+    border-radius: 8px;
+    height: 282px;
+  }
+  img.imgOnDeskTop {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+  }
+  .nameTeacher {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    margin-top: 20px;
+    text-align: center;
+
+    color: #112437;
+  }
+  .majorTeacher {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 32px;
+
+    text-align: center;
+
+    /* gray/600 */
+
+    color: #52525b;
+  }
+  .wrapDetail {
+    background-color: rgba(89, 156, 255, 0.1);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .inforDetail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    flex-direction: column;
+    padding: 16px;
+    width: 380px;
+    background: #ffffff;
+    box-shadow: 0px 15px 53px 45px rgba(89, 156, 255, 0.1);
+    border-radius: 8px;
+    display: flex;
+
+    h2 {
+      margin-top: 30px;
+    }
+    span {
+      display: block;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      /* or 24px */
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+
+      color: #52525b;
+    }
+    .position {
+      margin-top: 30px;
+    }
+    .ortherInfor {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      .ortherInfor_item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .num {
+          margin-top: 10px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 32px;
+          /* identical to box height, or 133% */
+        }
+      }
+    }
+    p {
+      margin-top: 20px;
     }
   }
 }

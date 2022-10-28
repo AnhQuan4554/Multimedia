@@ -5,7 +5,6 @@ const imgs = [
 ];
 const imgSlide = document.querySelector(".slide .slideImg");
 const textSlide = document.querySelector(".sldie .slideText");
-console.log(textSlide);
 
 const contentChoice = document.querySelector(".contentChoice");
 const imgChoice = document.querySelector("#imgChoice");
@@ -16,3 +15,19 @@ imgChoice.addEventListener("click", () => {
 });
 // contentChoice.addEventListener("click", () => {});
 // contentChoice.classList.add(show);
+
+////////////////////////// show ÌnorTeacher
+const infor_teacher_item = document.querySelectorAll(".infor_teacher_item");
+// const inforDetail = document.querySelectorAll(".inforDetail");
+const wrapDetail = document.querySelectorAll(".wrapDetail");
+infor_teacher_item.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    wrapDetail[index].style.display = "flex";
+  });
+});
+// inforDetail.forEach((item) => {});
+wrapDetail.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.style.display = "none";
+  });
+});
