@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,900;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./keyfram.css" />
+  </head>
+  <body>
+    <div class="banerMulti">
+      <div class="wrapSlide">
+        <div class="slide1">
+          <img class="slideImg" src="./img/banerMulti1.png" alt="" />
+          <p class="slideText anitex1">
+            Lorem ipsum dolorSLIDE1, sit amet consectetur adipisicing elit.
+            Distinctio quaerat doloribus accusantium dicta ipsum? Necessitatibus
+            rerum non neque obcaecati? Non maxime voluptas doloremque alias
+            architecto omnis nesciunt labore molestiae neque.
+          </p>
+        </div>
+        <div class="slide2">
+          <img class="slideImg" src="./img/banerMulti2.png" alt="" />
+          <p class="slideText anitex2">
+            Lorem ipsum dolorSLIDE2, sit amet consectetur adipisicing elit.
+            Distinctio quaerat doloribus accusantium dicta ipsum? Necessitatibus
+            rerum non neque obcaecati? Non maxime voluptas doloremque alias
+            architecto omnis nesciunt labore molestiae neque.
+          </p>
+        </div>
+        <div class="slide3">
+          <img class="slideImg" src="./img/banerMulti4.png" alt="" />
+          <p class="slideText anitex3">
+            Lorem ipsum dolorSLIDE3, sit amet consectetur adipisicing elit.
+            Distinctio quaerat doloribus accusantium dicta ipsum? Necessitatibus
+            rerum non neque obcaecati? Non maxime voluptas doloremque alias
+            architecto omnis nesciunt labore molestiae neque.
+          </p>
+        </div>
+        <div class="slide4">
+          <img class="slideImg" src="./img/banerMulti3.png" alt="" />
+          <p class="slideText anitex4">
+            Lorem ipsum dolorSLIDE4, sit amet consectetur adipisicing elit.
+            Distinctio quaerat doloribus accusantium dicta ipsum? Necessitatibus
+            rerum non neque obcaecati? Non maxime voluptas doloremque alias
+            architecto omnis nesciunt labore molestiae neque.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- start search -->
+    <div class="choiceAndSearch">
+      <div class="choiceMajor">
+        <div class="iconChoice">
+          <!-- lúc nào thay cái này bằng ảnh  -->
+          <img
+            id="imgChoice"
+            style="width: 48px; height: 48px"
+            src="./img/nav.jpg"
+            alt=""
+          />
+
+          <div class="contentChoice">
+            <span class="itemContentChoice">Công nghệ đa phương tiện</span>
+            <span class="itemContentChoice">Thiết kế đa phương tiện</span>
+            <span class="itemContentChoice">Truyền thông đa phương tiện</span>
+          </div>
+        </div>
+      </div>
+      <div class="searchInfor">
+        <input placeholder="Nhập thông tin bạn muốn tìm kiếm" type="text" />
+        <div class="iconSearch">
+          <i class="bx bx-search"></i>
+        </div>
+      </div>
+    </div>
+    <!-- end search -->
+    <div class="infor_teacher">
+      <div class="container">
+        <div class="row wrapContent">
+          <div class="col-2 no--padding infor_specialization">
+            <div class="showDetail_infor_specialization">
+              <p class="showDetail_sughest">Xem thông tin chi tiết</p>
+              <div class="showDetail_icon">
+                <i class="bx bxs-downvote"></i>
+              </div>
+            </div>
+            <div class="infor_specialization_title">
+              <span>Giảng viên của từng khoa khoa</span>
+            </div>
+            <ul class="infor_specialization_list">
+              <!-- dánh sách khoa -->
+              <li class="infor_specialization_item">PT đa phương tiên</li>
+              <li class="infor_specialization_item">TK đa phương tiện</li>
+              <li class="infor_specialization_item">TT đa phương tiện</li>
+              <li class="infor_specialization_item">Tất cả</li>
+            </ul>
+          </div>
+          <!-- sơ đồ thông tin  -->
+          <div class="col-10 infor_chart">
+            <span class="infor_title">Sơ đồ giảng viên</span>
+            <div class="row justify-content-center manager">
+              <div class="col-3 css_col">
+                <div class="img_col">
+                  <img src="./img/1.jpg" />
+                  <div class="infor_hover">
+                    <span class="infor_hover_name">Nguyễn Anh Quân</span>
+                    <span class="infor_hover_specialization"
+                      >Giảng viên Phát triển ứng dụng</span
+                    >
+                  </div>
+                </div>
+                <div class="wrap_infor_details">
+                  <div class="infor_details">
+                    <h2 class="nameUniver">PTIT</h2>
+                    <div class="infor_avatar">
+                      <img src="./img/1.jpg" alt="" />
+                    </div>
+
+                    <ul class="infor_list">
+                      <li class="infor_iteam">Nguyễn Anh Quân</li>
+                      <li class="infor_iteam">20</li>
+                      <li class="infor_iteam">CN Đa PT</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center member2">
+              <div class="col-3 css_col">
+                <div class="img_col">
+                  <img src="./img/1.jpg" />
+                  <div class="infor_hover">
+                    <span class="infor_hover_name">Nguyễn Anh Quân</span>
+                    <span class="infor_hover_specialization"
+                      >Giảng viên Phát triển ứng dụng</span
+                    >
+                  </div>
+                </div>
+                <div class="wrap_infor_details">
+                  <div class="infor_details">
+                    <h2 class="nameUniver">PTIT</h2>
+                    <div class="infor_avatar">
+                      <img src="./img/1.jpg" alt="" />
+                    </div>
+
+                    <ul class="infor_list">
+                      <li class="infor_iteam">Nguyễn Anh Quân</li>
+                      <li class="infor_iteam">20</li>
+                      <li class="infor_iteam">CN Đa PT</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3 css_col">
+                <div class="img_col">
+                  <img src="./img/1.jpg" />
+                  <div class="infor_hover">
+                    <span class="infor_hover_name">Nguyễn Anh Quân</span>
+                    <span class="infor_hover_specialization"
+                      >Giảng viên Phát triển ứng dụng</span
+                    >
+                  </div>
+                </div>
+                <div class="wrap_infor_details">
+                  <div class="infor_details">
+                    <h2 class="nameUniver">PTIT</h2>
+                    <div class="infor_avatar">
+                      <img src="./img/1.jpg" alt="" />
+                    </div>
+
+                    <ul class="infor_list">
+                      <li class="infor_iteam">Nguyễn Anh Quân</li>
+                      <li class="infor_iteam">20</li>
+                      <li class="infor_iteam">CN Đa PT</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 css_col">
+                <div class="img_col">
+                  <img src="./img/1.jpg" />
+                  <div class="infor_hover">
+                    <span class="infor_hover_name">Nguyễn Anh Quân</span>
+                    <span class="infor_hover_specialization"
+                      >Giảng viên Phát triển ứng dụng</span
+                    >
+                  </div>
+                </div>
+                <div class="wrap_infor_details">
+                  <div class="infor_details">
+                    <h2 class="nameUniver">PTIT</h2>
+                    <div class="infor_avatar">
+                      <img src="./img/1.jpg" alt="" />
+                    </div>
+
+                    <ul class="infor_list">
+                      <li class="infor_iteam">Nguyễn Anh Quân</li>
+                      <li class="infor_iteam">20</li>
+                      <li class="infor_iteam">CN Đa PT</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center member3">
+              <div class="col-3 css_col">
+                <div class="img_col">
+                  <img src="./img/1.jpg" />
+                  <div class="infor_hover">
+                    <span class="infor_hover_name">Nguyễn Anh Quân</span>
+                    <span class="infor_hover_specialization"
+                      >Giảng viên Phát triển ứng dụng</span
+                    >
+                  </div>
+                </div>
+                <div class="wrap_infor_details">
+                  <div class="infor_details">
+                    <h2 class="nameUniver">PTIT</h2>
+                    <div class="infor_avatar">
+                      <img src="./img/1.jpg" alt="" />
+                    </div>
+
+                    <ul class="infor_list">
+                      <li class="infor_iteam">Nguyễn Anh Quân</li>
+                      <li class="infor_iteam">20</li>
+                      <li class="infor_iteam">CN Đa PT</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 css_col">
+                <div class="img_col">
+                  <img src="./img/1.jpg" />
+                  <div class="infor_hover">
+                    <span class="infor_hover_name">Nguyễn Anh Quân</span>
+                    <span class="infor_hover_specialization"
+                      >Giảng viên Phát triển ứng dụng</span
+                    >
+                  </div>
+                </div>
+                <div class="wrap_infor_details">
+                  <div class="infor_details">
+                    <h2 class="nameUniver">PTIT</h2>
+                    <div class="infor_avatar">
+                      <img src="./img/1.jpg" alt="" />
+                    </div>
+
+                    <ul class="infor_list">
+                      <li class="infor_iteam">Nguyễn Anh Quân</li>
+                      <li class="infor_iteam">20</li>
+                      <li class="infor_iteam">CN Đa PT</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 css_col">
+                <div class="img_col">
+                  <img src="./img/1.jpg" />
+                  <div class="infor_hover">
+                    <span class="infor_hover_name">Nguyễn Anh Quân</span>
+                    <span class="infor_hover_specialization"
+                      >Giảng viên Phát triển ứng dụng</span
+                    >
+                  </div>
+                </div>
+                <div class="wrap_infor_details">
+                  <div class="infor_details">
+                    <h2 class="nameUniver">PTIT</h2>
+                    <div class="infor_avatar">
+                      <img src="./img/1.jpg" alt="" />
+                    </div>
+
+                    <ul class="infor_list">
+                      <li class="infor_iteam">Nguyễn Anh Quân</li>
+                      <li class="infor_iteam">20</li>
+                      <li class="infor_iteam">CN Đa PT</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 css_col">
+                <div class="img_col">
+                  <img src="./img/1.jpg" />
+                  <div class="infor_hover">
+                    <span class="infor_hover_name">Nguyễn Anh Quân</span>
+                    <span class="infor_hover_specialization"
+                      >Giảng viên Phát triển ứng dụng</span
+                    >
+                  </div>
+                </div>
+                <div class="wrap_infor_details">
+                  <div class="infor_details">
+                    <h2 class="nameUniver">PTIT</h2>
+                    <div class="infor_avatar">
+                      <img src="./img/1.jpg" alt="" />
+                    </div>
+
+                    <ul class="infor_list">
+                      <li class="infor_iteam">Nguyễn Anh Quân</li>
+                      <li class="infor_iteam">20</li>
+                      <li class="infor_iteam">CN Đa PT</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 css_col">
+                <div class="img_col">
+                  <img src="./img/1.jpg" />
+                  <div class="infor_hover">
+                    <span class="infor_hover_name">Nguyễn Anh Quân</span>
+                    <span class="infor_hover_specialization"
+                      >Giảng viên Phát triển ứng dụng</span
+                    >
+                  </div>
+                </div>
+                <div class="wrap_infor_details">
+                  <div class="infor_details">
+                    <h2 class="nameUniver">PTIT</h2>
+                    <div class="infor_avatar">
+                      <img src="./img/1.jpg" alt="" />
+                    </div>
+
+                    <ul class="infor_list">
+                      <li class="infor_iteam">Nguyễn Anh Quân</li>
+                      <li class="infor_iteam">20</li>
+                      <li class="infor_iteam">CN Đa PT</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 css_col">
+                <div class="img_col">
+                  <img src="./img/1.jpg" />
+                  <div class="infor_hover">
+                    <span class="infor_hover_name">Nguyễn Anh Quân</span>
+                    <span class="infor_hover_specialization"
+                      >Giảng viên Phát triển ứng dụng</span
+                    >
+                  </div>
+                </div>
+                <div class="wrap_infor_details">
+                  <div class="infor_details">
+                    <h2 class="nameUniver">PTIT</h2>
+                    <div class="infor_avatar">
+                      <img src="./img/1.jpg" alt="" />
+                    </div>
+
+                    <ul class="infor_list">
+                      <li class="infor_iteam">Nguyễn Anh Quân</li>
+                      <li class="infor_iteam">20</li>
+                      <li class="infor_iteam">CN Đa PT</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                      <li class="infor_iteam">Sinh Viên</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
