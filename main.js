@@ -19,14 +19,14 @@ imgChoice.addEventListener("click", () => {
 ////////////////////////// show ÌnorTeacher
 const infor_teacher_item = document.querySelectorAll(".infor_teacher_item");
 // const inforDetail = document.querySelectorAll(".inforDetail");
-const wrapDetail = document.querySelectorAll(".wrapDetail");
+const inforDetail = document.querySelectorAll(".inforDetail");
 infor_teacher_item.forEach((item, index) => {
   item.addEventListener("click", () => {
-    wrapDetail[index].style.display = "flex";
+    inforDetail[index].style.display = "flex";
   });
 });
 // inforDetail.forEach((item) => {});
-wrapDetail.forEach((item) => {
+inforDetail.forEach((item) => {
   item.addEventListener("click", () => {
     item.style.display = "none";
   });
