@@ -18,7 +18,7 @@ imgChoice.addEventListener("click", () => {
 
 ////////////////////////// show ÌnorTeacher
 const infor_teacher_item = document.querySelectorAll(".infor_teacher_item");
-// const inforDetail = document.querySelectorAll(".inforDetail");
+const btnCloseInforDetail = document.querySelectorAll(".btnCloseInforDetail");
 const inforDetail = document.querySelectorAll(".inforDetail");
 infor_teacher_item.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -26,8 +26,13 @@ infor_teacher_item.forEach((item, index) => {
   });
 });
 // inforDetail.forEach((item) => {});
-inforDetail.forEach((item) => {
+// inforDetail.forEach((item,index) => {
+//   item.addEventListener("click", () => {
+//     item.style.display = "none";
+//   });
+// });
+btnCloseInforDetail.forEach((item, index) => {
   item.addEventListener("click", () => {
-    item.style.display = "none";
+    inforDetail[index].style.display = "none";
   });
 });

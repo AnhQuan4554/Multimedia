@@ -81,7 +81,23 @@
     }
   }
 }
-
+.aniTextMulti {
+  width: 100%;
+  height: 200px;
+  margin: 50px 0;
+  background: #247fad;
+  text-align: center;
+  h1 {
+    font-size: 190px;
+    line-height: 160px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(./img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: backgroundText infinite linear 20s;
+  }
+}
 .choiceAndSearch {
   width: 100%;
   display: flex;
@@ -89,6 +105,7 @@
   justify-content: center;
   margin-bottom: 50px;
   .iconChoice {
+    cursor: pointer;
     position: relative;
     width: 71px;
     height: 48px;
@@ -97,7 +114,7 @@
     text-align: center;
     #imgChoice {
       font-size: 48px;
-      color: #d4dee5;
+      color: #fff;
     }
     .contentChoice {
       width: 262px;
@@ -107,6 +124,8 @@
       top: 100%;
       left: 50%;
       transform: translateX(-50%);
+      background: #ffffff;
+      z-index: 2;
       box-shadow: 0px 15px 50px 5px rgba(89, 156, 255, 0.1);
       border-radius: 8px;
       animation: show 0.4s ease-in-out;
@@ -175,6 +194,7 @@
   // background-color: red;
   position: relative;
   .infor_teacher_item {
+    position: relative;
     display: flex;
     flex-direction: column;
     // align-items: center;
@@ -191,6 +211,17 @@
     width: 122px;
     height: 122px;
     border-radius: 50%;
+    &:hover {
+      cursor: pointer;
+      animation: hoverImgTeacher 0.5s ease-in-out forwards;
+      border-radius: 8px;
+    }
+    &:hover ~ .nameTeacher {
+      display: none;
+    }
+    &:hover ~ .majorTeacher {
+      display: none;
+    }
   }
   .nameTeacher {
     font-family: "Inter";
@@ -221,8 +252,9 @@
 
   .inforDetail {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -72%);
     display: none;
     z-index: 1;
     flex-direction: column;
@@ -231,7 +263,24 @@
     background: #ffffff;
     box-shadow: 0px 15px 53px 45px rgba(89, 156, 255, 0.1);
     border-radius: 8px;
-    // display: flex;
+    .btnCloseInforDetail {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      .bx {
+        position: absolute;
+        top: 0;
+        right: -58px;
+        font-size: 50px;
+        color: #f79621;
+        cursor: pointer;
+
+        &:hover {
+          color: red;
+          animation: close infinite 0.2s ease-in;
+        }
+      }
+    }
 
     h2 {
       margin-top: 30px;
