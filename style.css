@@ -21,7 +21,6 @@
 .banerMulti {
   width: 100%;
   height: 80vh;
-  margin-bottom: 100px;
 }
 
 .banerMulti .wrapSlide {
@@ -127,6 +126,7 @@
   width: 100%;
   height: 200px;
   margin: 50px 0;
+  margin-top: 0;
   background: #247fad;
   text-align: center;
 }
@@ -250,8 +250,8 @@
 
 .choiceAndSearch .searchInfor input.active {
   width: 641px;
-  -webkit-transition: all 2s ease-in;
-  transition: all 2s ease-in;
+  -webkit-transition: all 1.4s ease-in;
+  transition: all 1.4s ease-in;
   position: relative;
 }
 
@@ -271,8 +271,8 @@
   height: 100%;
   background-color: #fff;
   border-left: 1px solid #f79621;
-  -webkit-animation: typing 2.5s steps(28) infinite;
-          animation: typing 2.5s steps(28) infinite;
+  -webkit-animation: typing 2s steps(28) infinite;
+          animation: typing 2s steps(28) infinite;
 }
 
 .choiceAndSearch .searchInfor .iconSearch {
@@ -299,6 +299,22 @@
   color: #fff;
 }
 
+.infor_teacher {
+  position: relative;
+}
+
+.infor_teacher img.orange {
+  background: #ffefdc;
+  -webkit-filter: blur(81.5px);
+  filter: blur(81.5px);
+  width: 306px;
+  height: 351px;
+  top: 12%;
+  left: 8%;
+  z-index: -1;
+  position: absolute;
+}
+
 .infor_teacher h1 {
   font-family: "Inter";
   font-style: normal;
@@ -306,6 +322,7 @@
   font-size: 48px;
   color: #112437;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .infor_teacher {
@@ -384,7 +401,7 @@
 
 .infor_teacher .inforDetail {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -72%);
           transform: translate(-50%, -72%);
@@ -491,6 +508,19 @@
 .newWriter {
   width: 100%;
   margin-top: 50px;
+  position: relative;
+}
+
+.newWriter img.orange {
+  background: #ffefdc;
+  -webkit-filter: blur(81.5px);
+  filter: blur(81.5px);
+  width: 306px;
+  height: 351px;
+  top: 66%;
+  left: 59%;
+  z-index: -1;
+  position: absolute;
 }
 
 .newWriter h1 {
@@ -629,6 +659,7 @@
 .arrangeWriter {
   width: 100%;
   margin-top: 26px;
+  cursor: pointer;
 }
 
 .arrangeWriter .arrangeWriter_item {
@@ -671,6 +702,11 @@
   text-align: center;
   padding: 0 50px;
   color: #ffffff;
+}
+
+.arrangeWriter.active {
+  -webkit-animation: arrImgMove 0.6s linear both;
+          animation: arrImgMove 0.6s linear both;
 }
 
 .container.stylePosition {
@@ -753,6 +789,7 @@
 
 .arrangeFanPage {
   width: 100%;
+  min-height: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -783,8 +820,14 @@
   width: 59.89px;
   height: 53.64px;
   background: url(coding.png);
-  -webkit-transform: rotate(-21.92deg);
-          transform: rotate(-21.92deg);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.arrangeFanPage .pageItem img.avata:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
 }
 
 .arrangeFanPage .pageItem h3 {
@@ -795,6 +838,26 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.arrangeFanPage .pageItem h3 span {
+  display: block;
+  margin-left: 4px;
+}
+
+.arrangeFanPage .pageItem h3:hover span {
+  -webkit-animation: spanMoveTop 0.3s linear;
+          animation: spanMoveTop 0.3s linear;
 }
 
 .arrangeFanPage .pageItem p {
@@ -804,6 +867,7 @@
   font-size: 15px;
   line-height: 18px;
   text-align: center;
+  width: 100%;
   color: #838ba3;
 }
 
@@ -813,15 +877,24 @@
   margin-left: 150px;
 }
 
+.arrangeFanPage .pageItem:hover {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  cursor: pointer;
+}
+
 .arrangeFanPage img.orange {
   background: #ffefdc;
   -webkit-filter: blur(81.5px);
   filter: blur(81.5px);
   width: 306px;
   height: 351px;
-  margin-top: -14px;
-  margin-right: -138px;
-  float: right;
+  top: 12%;
+  left: 68%;
+  z-index: -1;
+  position: absolute;
 }
 
 .footer {
@@ -898,5 +971,14 @@
   line-height: 28px;
   /* identical to box height, or 117% */
   color: #fdfdfd;
+}
+
+.footerItemContent span:hover {
+  color: #247fad;
+  -webkit-transform: translateX(16px);
+          transform: translateX(16px);
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

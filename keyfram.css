@@ -230,6 +230,22 @@
     opacity: 1;
   }
 }
+@keyframes arrImgMove {
+  0% {
+    opacity: 0;
+    margin-left: 50px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+@keyframes spanMoveTop {
+  100% {
+    margin-top: -25px;
+    color: #f79621;
+  }
+}
 @keyframes backgroundText {
   0% {
     background-position: 0 0;

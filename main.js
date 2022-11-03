@@ -21,7 +21,6 @@ const infor_teacher_item = document.querySelectorAll(".infor_teacher_item");
 const btnCloseInforDetail = document.querySelectorAll(".btnCloseInforDetail");
 const inforDetail = document.querySelectorAll(".inforDetail");
 const placeText = document.querySelector(".placeText");
-
 const searchInforInput = document.querySelector(".searchInfor input");
 const imgNewWriter_item_left = document.querySelector(
   ".newWriter_item-left img"
@@ -29,9 +28,8 @@ const imgNewWriter_item_left = document.querySelector(
 const imgNewWriter_item_right = document.querySelectorAll(
   ".newWriter_item-right img"
 );
-const arrangeWriter_items = document.querySelectorAll(
-  ".arrangeWriter_item img"
-);
+const arrangeWriters = document.querySelectorAll(".arrangeWriter");
+const pageItems = document.querySelectorAll(".pageItem");
 //////////////////////////////
 infor_teacher_item.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -88,7 +86,15 @@ document.addEventListener("scroll", (event) => {
     imgNewWriter_item_left.classList.remove("active");
   }
 });
-// document.addEventListener("scroll", (event) => {
-//   if(arrangeWriter_items[0])
-
-// });
+document.addEventListener("scroll", (event) => {
+  if (arrangeWriters[0].getBoundingClientRect().top - window.scrollY < 300) {
+    arrangeWriters.forEach((item) => {
+      item.classList.add("active");
+    });
+  } else {
+    arrangeWriters.forEach((item) => {
+      item.classList.remove("active");
+    });
+  }
+});
+// document.querySelector("body").style.background = "red";

@@ -11,6 +11,7 @@
 .no--padding {
   padding: 0;
 }
+
 .col-3.myCssCol {
 }
 .col-3.css_col {
@@ -20,7 +21,6 @@
 .banerMulti {
   width: 100%;
   height: 80vh;
-  margin-bottom: 100px;
 
   .wrapSlide {
     width: 100%;
@@ -85,6 +85,7 @@
   width: 100%;
   height: 200px;
   margin: 50px 0;
+  margin-top: 0;
   background: #247fad;
   text-align: center;
   h1 {
@@ -172,7 +173,7 @@
       border-radius: 8px;
       &.active {
         width: 641px;
-        transition: all 2s ease-in;
+        transition: all 1.4s ease-in;
         position: relative;
       }
     }
@@ -191,7 +192,7 @@
         height: 100%;
         background-color: #fff;
         border-left: 1px solid #f79621;
-        animation: typing 2.5s steps(28) infinite;
+        animation: typing 2s steps(28) infinite;
       }
     }
     .iconSearch {
@@ -213,6 +214,18 @@
   }
 }
 .infor_teacher {
+  position: relative;
+  img.orange {
+    background: #ffefdc;
+    -webkit-filter: blur(81.5px);
+    filter: blur(81.5px);
+    width: 306px;
+    height: 351px;
+    top: 12%;
+    left: 8%;
+    z-index: -1;
+    position: absolute;
+  }
   h1 {
     font-family: "Inter";
     font-style: normal;
@@ -220,7 +233,10 @@
     font-size: 48px;
     color: #112437;
     text-align: center;
+    margin-bottom: 30px;
   }
+
+  // background-color: red;
 }
 .infor_teacher {
   // background-color: red;
@@ -284,10 +300,9 @@
 
     color: #52525b;
   }
-
   .inforDetail {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -72%);
     display: none;
@@ -361,11 +376,32 @@
     p {
       margin-top: 20px;
     }
+
+    // &::after {
+    //   background-color: red;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    // }
   }
 }
 .newWriter {
   width: 100%;
   margin-top: 50px;
+  position: relative;
+  img.orange {
+    background: #ffefdc;
+    -webkit-filter: blur(81.5px);
+    filter: blur(81.5px);
+    width: 306px;
+    height: 351px;
+    top: 66%;
+    left: 59%;
+    z-index: -1;
+    position: absolute;
+  }
   h1 {
     font-family: "Inter";
     font-style: normal;
@@ -473,6 +509,7 @@
 .arrangeWriter {
   width: 100%;
   margin-top: 26px;
+  cursor: pointer;
   .arrangeWriter_item {
     height: 100%;
     position: relative;
@@ -480,6 +517,7 @@
       width: 100%;
       height: 100%;
     }
+
     .arrangeWriter_item_text {
       background: linear-gradient(
         155.3deg,
@@ -509,6 +547,9 @@
       padding: 0 50px;
       color: #ffffff;
     }
+  }
+  &.active {
+    animation: arrImgMove 0.6s linear both;
   }
 }
 .container.stylePosition {
@@ -578,6 +619,7 @@
 }
 .arrangeFanPage {
   width: 100%;
+  min-height: 400px;
   position: relative;
   overflow: hidden;
   .pageItem {
@@ -598,7 +640,11 @@
       height: 53.64px;
 
       background: url(coding.png);
-      transform: rotate(-21.92deg);
+      transition: all 0.5s linear;
+      &:hover {
+        cursor: pointer;
+        transform: rotate(-30deg);
+      }
     }
     h3 {
       font-family: "Inter";
@@ -607,8 +653,21 @@
       font-size: 20px;
       line-height: 24px;
       text-align: center;
-
       color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      span {
+        display: block;
+        margin-left: 4px;
+      }
+      &:hover {
+        // background-color: red;
+        span {
+          animation: spanMoveTop 0.3s linear;
+        }
+      }
     }
     p {
       font-family: "Inter";
@@ -617,13 +676,18 @@
       font-size: 15px;
       line-height: 18px;
       text-align: center;
-
+      width: 100%;
       color: #838ba3;
     }
     img.vecto {
       width: 43px;
       height: 34px;
       margin-left: 150px;
+    }
+    &:hover {
+      transition: all 0.3s linear;
+      transform: translateY(-10px);
+      cursor: pointer;
     }
   }
   img.orange {
@@ -632,9 +696,10 @@
     filter: blur(81.5px);
     width: 306px;
     height: 351px;
-    margin-top: -14px;
-    margin-right: -138px;
-    float: right;
+    top: 12%;
+    left: 68%;
+    z-index: -1;
+    position: absolute;
   }
 }
 .footer {
@@ -697,6 +762,16 @@
       /* identical to box height, or 117% */
 
       color: #fdfdfd;
+    }
+  }
+}
+.footerItemContent {
+  span {
+    &:hover {
+      color: #247fad;
+      transform: translateX(16px);
+      transition: all linear 0.3s;
+      cursor: pointer;
     }
   }
 }
