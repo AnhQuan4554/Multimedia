@@ -167,6 +167,11 @@
   text-align: center;
 }
 
+.choiceAndSearch .iconChoice.active {
+  -webkit-animation: scaleAndShow 1s linear forwards;
+          animation: scaleAndShow 1s linear forwards;
+}
+
 .choiceAndSearch .iconChoice #imgChoice {
   font-size: 48px;
   color: #fff;
@@ -221,16 +226,53 @@
   height: 48px;
   margin-left: 100px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
 }
 
 .choiceAndSearch .searchInfor input {
   width: 100%;
   color: #d4dee5;
   padding: 12px 26px;
-  width: 641px;
+  width: 60px;
   height: 48px;
   border: 2px solid rgba(40, 88, 126, 0.2);
   border-radius: 8px;
+}
+
+.choiceAndSearch .searchInfor input.active {
+  width: 641px;
+  -webkit-transition: all 2s ease-in;
+  transition: all 2s ease-in;
+  position: relative;
+}
+
+.choiceAndSearch .searchInfor .placeText {
+  display: none;
+  position: absolute;
+  left: 30px;
+  font-size: 22px;
+}
+
+.choiceAndSearch .searchInfor .placeText::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-left: 1px solid #f79621;
+  -webkit-animation: typing 2.5s steps(28) infinite;
+          animation: typing 2.5s steps(28) infinite;
 }
 
 .choiceAndSearch .searchInfor .iconSearch {
@@ -288,6 +330,11 @@
           box-shadow: 0px 15px 50px 5px rgba(89, 156, 255, 0.1);
   border-radius: 8px;
   height: 282px;
+}
+
+.infor_teacher .infor_teacher_item.active {
+  -webkit-animation: showInfor_teacher_item 1s forwards ease-in;
+          animation: showInfor_teacher_item 1s forwards ease-in;
 }
 
 .infor_teacher img.imgOnDeskTop {
@@ -457,11 +504,26 @@
 
 .newWriter .newWriter_item-left {
   position: relative;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .newWriter .newWriter_item-left img {
   width: 100%;
   height: 100%;
+}
+
+.newWriter .newWriter_item-left img:hover {
+  border-radius: 12px;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.newWriter .newWriter_item-left img.active {
+  -webkit-animation: imgMoveLeft 0.5s ease-in 0.3s both;
+          animation: imgMoveLeft 0.5s ease-in 0.3s both;
 }
 
 .newWriter .newWriter_item-left .nameNewWriter_item-left {
@@ -505,6 +567,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .newWriter .newWriter_item-right img {
@@ -512,10 +576,27 @@
   height: 100%;
 }
 
+.newWriter .newWriter_item-right img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.newWriter .newWriter_item-right img.active {
+  -webkit-animation: imgMoveTop 1s ease-in forwards;
+          animation: imgMoveTop 1s ease-in forwards;
+}
+
+.newWriter .newWriter_item-right img.active.delay {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
 .newWriter .newWriter_item-right .nameNewWriter_item-right {
   position: absolute;
   width: 100%;
-  height: 125px;
+  height: 70px;
   bottom: 0;
   left: 0;
   background: linear-gradient(155.3deg, rgba(189, 188, 188, 0.05) 15.75%, rgba(221, 221, 221, 0.0115) 91.41%);
@@ -539,7 +620,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 150%;
+  margin: 0;
   /* or 24px */
   text-align: center;
   color: #ffffff;
@@ -619,6 +700,17 @@
   top: 105%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.btnNext:hover {
+  cursor: pointer;
+}
+
+.btnNext:hover img {
+  -webkit-transform: translateX(12px);
+          transform: translateX(12px);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .btnNext img {
