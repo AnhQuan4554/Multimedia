@@ -7,11 +7,16 @@ const imgSlide = document.querySelector(".slide .slideImg");
 const textSlide = document.querySelector(".sldie .slideText");
 
 const contentChoice = document.querySelector(".contentChoice");
+const infor_teacher = document.querySelector(".infor_teacher");
 const imgChoice = document.querySelector("#imgChoice");
 imgChoice.addEventListener("click", () => {
   contentChoice.classList.contains("show")
     ? contentChoice.classList.remove("show")
     : contentChoice.classList.add("show");
+  // chỉnh sửa z-index Teacher
+  contentChoice.classList.contains("show")
+    ? (infor_teacher.style.zIndex = -2)
+    : (infor_teacher.style.zIndex = 0);
 });
 // contentChoice.addEventListener("click", () => {});
 // contentChoice.classList.add(show);
