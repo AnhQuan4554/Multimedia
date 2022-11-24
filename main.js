@@ -103,3 +103,30 @@ document.addEventListener("scroll", (event) => {
   }
 });
 // document.querySelector("body").style.background = "red";
+
+// Sắp xếp thầy cô theo khoa
+
+// Làm cho 3 mục thầy cô biến mất đã
+const infor_teachers = document.querySelectorAll(".infor_teacher .container");
+infor_teachers.forEach((item, index) => {
+  if (index != 0) item.style.display = "none";
+});
+// infor_teachers[0].style.display = "none";
+const itemContentChoices = document.querySelectorAll(".itemContentChoice");
+
+Array.from(itemContentChoices).forEach((item, index) => {
+  item.addEventListener("click", () => {
+    //làm biến mất các thanh lựa chọn đã
+    contentChoice.classList.remove("show");
+    contentChoice.classList.contains("show")
+      ? (infor_teacher.style.zIndex = -2)
+      : (infor_teacher.style.zIndex = 0);
+
+    // các mục thầy cô block trước đó sẽ thành none
+    infor_teachers.forEach((item, index) => {
+      item.style.display = "none";
+    });
+    // phải cộng 1 vì có cái class ban đầu chứa tất cacr các thầy cô
+    infor_teachers[index + 1].style.display = "block";
+  });
+});
