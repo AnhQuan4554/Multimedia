@@ -225,23 +225,38 @@
     height: 282px;
     opacity: 0;
   }
+  30% {
+    height: 282px;
+    opacity: 0;
+  }
+  50% {
+    height: 482px;
+    opacity: 0;
+  }
+  80% {
+    height: 582px;
+    opacity: 0.7;
+    height: 682px;
+  }
+  90% {
+    height: 682px;
+
+    opacity: 0.7;
+  }
   100% {
+    min-height: 282px;
     opacity: 1;
-    max-height: 282px;
-    overflow: hidden;
-    /* overflow: unset; */
   }
 }
 @keyframes showInforDetail2 {
   0% {
     opacity: 0;
     border-radius: 50%;
-    height: 500px;
   }
   100% {
     border-radius: 0;
     opacity: 1;
-    min-height: 710px;
+    min-height: 200px;
   }
 }
 @keyframes imgMoveTop {
@@ -262,6 +277,26 @@
   100% {
     opacity: 1;
     margin-left: 0;
+  }
+}
+@keyframes nameTeacherDetail {
+  0% {
+    margin-left: -20px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes textMoveTop {
+  0% {
+    margin-bottom: -10px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-bottom: 0;
   }
 }
 @keyframes spanMoveTop {

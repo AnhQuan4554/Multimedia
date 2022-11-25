@@ -422,8 +422,8 @@
   border-radius: 8px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 20px 28px 26px 28px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 20px 28px 26px 28px;
-  -webkit-animation: showInforDetail1 0.3s linear both;
-          animation: showInforDetail1 0.3s linear both;
+  -webkit-animation: showInforDetail1 0.3s ease-in-out both, showInforDetail2 0.5s linear backwards;
+          animation: showInforDetail1 0.3s ease-in-out both, showInforDetail2 0.5s linear backwards;
 }
 
 .infor_teacher .inforDetail .btnCloseInforDetail {
@@ -451,8 +451,23 @@
      object-fit: cover;
 }
 
-.infor_teacher .inforDetail h2 {
+.infor_teacher .inforDetail .nameTeacher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.infor_teacher .inforDetail .nameTeacher span {
+  margin-left: 4px;
+  font-size: 30px;
+  font-weight: 500;
+  display: inline-block;
   margin-top: 30px;
+  -webkit-animation: nameTeacherDetail 1s linear 1 both;
+          animation: nameTeacherDetail 1s linear 1 both;
 }
 
 .infor_teacher .inforDetail span {
@@ -475,9 +490,28 @@
 
 .infor_teacher .inforDetail .position {
   margin-top: 30px;
+  -webkit-animation: textMoveTop 0.4s linear 0.5s both;
+          animation: textMoveTop 0.4s linear 0.5s both;
+}
+
+.infor_teacher .inforDetail .specializedDetail {
+  -webkit-animation: textMoveTop 0.4s linear 0.8s both;
+          animation: textMoveTop 0.4s linear 0.8s both;
+}
+
+.infor_teacher .inforDetail .email {
+  -webkit-animation: textMoveTop 0.4s linear 1.2s both;
+          animation: textMoveTop 0.4s linear 1.2s both;
+}
+
+.infor_teacher .inforDetail .phone {
+  -webkit-animation: textMoveTop 0.4s linear 1.6s both;
+          animation: textMoveTop 0.4s linear 1.6s both;
 }
 
 .infor_teacher .inforDetail .ortherInfor {
+  -webkit-animation: textMoveTop 0.4s linear 2s both;
+          animation: textMoveTop 0.4s linear 2s both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
