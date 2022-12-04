@@ -226,26 +226,28 @@
     opacity: 0;
   }
   30% {
-    height: 282px;
-    opacity: 0;
+    /* height: 282px; */
+    opacity: 1;
   }
-  50% {
-    height: 482px;
-    opacity: 0;
+  40% {
+    height: 282px;
+    overflow: hidden;
   }
   80% {
-    height: 582px;
-    opacity: 0.7;
-    height: 682px;
+    /* height: 482px; */
+    opacity: 1;
+    min-height: 282px;
+    overflow: hidden;
   }
   90% {
-    height: 682px;
+    height: 600px;
 
-    opacity: 0.7;
+    opacity: 1;
   }
   100% {
     min-height: 282px;
     opacity: 1;
+    overflow: unset;
   }
 }
 @keyframes showInforDetail2 {

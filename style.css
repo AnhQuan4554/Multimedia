@@ -403,11 +403,12 @@
 }
 
 .infor_teacher .inforDetail {
+  overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -72%);
-          transform: translate(-50%, -72%);
+  -webkit-transform: translate(-50%, -90%);
+          transform: translate(-50%, -90%);
   display: none;
   z-index: 1;
   -webkit-box-orient: vertical;
@@ -422,8 +423,8 @@
   border-radius: 8px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 20px 28px 26px 28px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 20px 28px 26px 28px;
-  -webkit-animation: showInforDetail1 0.3s ease-in-out both, showInforDetail2 0.5s linear backwards;
-          animation: showInforDetail1 0.3s ease-in-out both, showInforDetail2 0.5s linear backwards;
+  -webkit-animation: showInforDetail1 0.8s ease-in-out both, showInforDetail2 0.5s linear backwards;
+          animation: showInforDetail1 0.8s ease-in-out both, showInforDetail2 0.5s linear backwards;
 }
 
 .infor_teacher .inforDetail .btnCloseInforDetail {
@@ -455,13 +456,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
 }
 
 .infor_teacher .inforDetail .nameTeacher span {
-  margin-left: 4px;
+  margin-right: 6px;
   font-size: 30px;
   font-weight: 500;
   display: inline-block;
