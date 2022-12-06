@@ -128,7 +128,15 @@
   margin: 50px 0;
   margin-top: 0;
   background: #247fad;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .aniTextMulti h1 {
@@ -711,6 +719,17 @@
 .arrangeWriter .arrangeWriter_item {
   height: 100%;
   position: relative;
+}
+
+.arrangeWriter .arrangeWriter_item:hover {
+  overflow: hidden;
+}
+
+.arrangeWriter .arrangeWriter_item:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .arrangeWriter .arrangeWriter_item img.arrangeWriter_item_img {
