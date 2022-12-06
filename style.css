@@ -413,7 +413,7 @@
 .infor_teacher .inforDetail {
   overflow: hidden;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -90%);
           transform: translate(-50%, -90%);
