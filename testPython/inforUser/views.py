@@ -15,14 +15,7 @@ def signin(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
-        student_id = request.POST.get('student_id')
-        hashed_password = make_password(password)
-        
-        
-        # Tạo một đối tượng UserProfile mới và lưu vào cơ sở dữ liệu
-        user_profile = UserPtit(username=username, password=hashed_password,student_id=student_id)
-        user_profile.save()
-     
+        print(username,password)
         return render(request, 'pages/sigin.html')
     else:
         # Nếu không phải method POST thì trả về trang login
@@ -76,3 +69,10 @@ def register(request):
     else:
         # Nếu không phải method POST thì trả về trang login
         return render(request, 'pages/register.html')
+def inforUser(request):
+    if request.method == 'POST':
+        # email = request.POST.get('email')
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        print(username)
+    return render(request,'pages/inforUser.html')
