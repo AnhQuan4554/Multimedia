@@ -76,3 +76,6 @@ def inforUser(request):
         password = request.POST.get('password')
         print(username)
     return render(request,'pages/inforUser.html')
+def listUser(request):
+    Data = {'listUserData': UserPtit.objects.all()}
+    return render(request, 'pages/listuser.html',Data)

@@ -19,6 +19,7 @@ from blog.views import index
 from blog.views import submit
 from inforUser.views import signin
 from inforUser.views import inforUser
+from inforUser.views import listUser
 from inforUser.views import register
 from inforUser.views import home
 urlpatterns = [
@@ -26,6 +27,7 @@ urlpatterns = [
     path('inforUser/',inforUser,name='inforUser' ),
     path('signin/',signin,name='signin' ),
     path('register/',register,name='register' ),
+    path('listuser/',listUser,name='listuser' ),
     path('admin/', admin.site.urls),
     path('blog/',index,name='blog' ),
     path('',home,name='home' ),
