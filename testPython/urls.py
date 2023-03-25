@@ -19,14 +19,18 @@ from blog.views import index
 from blog.views import submit
 from inforUser.views import signin
 from inforUser.views import inforUser
+from inforUser.views import listUser
 from inforUser.views import register
 from inforUser.views import home
+from inforUser.views import multimedia
+
 urlpatterns = [
     path('submit/',submit,name='submit' ),
-    path('inforUser/',inforUser,name='inforUser' ),
+    path('inforuser/',inforUser,name='inforUser' ),
     path('signin/',signin,name='signin' ),
-    path('register/',register,name='register' ),
+    path('',register,name='register' ),
+    path('listuser/',listUser,name='listuser' ),
     path('admin/', admin.site.urls),
+    path('multimedia/',multimedia,name='multimedia' ),
     path('blog/',index,name='blog' ),
-    path('',home,name='home' ),
 ]

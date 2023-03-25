@@ -77,6 +77,15 @@
           required
         />
         <div class="invalid-feedback">Cung cấp mã sinh viên</div>
+        <label for="validationCustom03" class="form-label">Địa chỉ</label>
+        <input
+          type="text"
+          name="address"
+          class="form-control"
+          id="validationCustom03"
+          required
+        />
+        <div class="invalid-feedback">Cung cấp địa chỉ sinh viên</div>
       </div>
 
       <div class="col-12">
@@ -105,6 +114,10 @@
           Submit form
         </button>
       </div>
+    </form>
+    <form method="post" action="{% url 'multimedia' %}">
+      {% csrf_token %}
+      <input type="submit" value="Go to Multimedia" />
     </form>
   </body>
   <style>

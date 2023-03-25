@@ -27,20 +27,48 @@
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
+        <h5 style="text-align: center" class="card-title">
+          Thông tin sinh viên
+        </h5>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
+
+      <ul
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+        class="list-group list-group-flush"
+      >
+        <li class="list-group-item">Họ và tên:{{inforDetail.username}}</li>
+        <li class="list-group-item">Email:{{ inforDetail.email }}</li>
+        <li class="list-group-item">
+          Mã sinh viên: {{ inforDetail.student_id }}
+        </li>
       </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        "
+        class="card-body"
+      >
+        <a
+          target="_blank"
+          style="text-align: center; text-decoration: none"
+          href="https://anhquan4554.github.io/Multimedia/"
+          class="card-link"
+          >Link tham khảm Khoa Multimedia</a
+        >
+        <a
+          style="text-align: center; text-decoration: none"
+          href="{% url 'signin' %}"
+          class="card-link"
+          >Quay trở lại đăng nhập</a
+        >
       </div>
     </div>
   </body>
