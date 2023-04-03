@@ -11,6 +11,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
   </head>
   <body>
     <form class="row g-3 needs-validation" method="POST" novalidate>
@@ -22,10 +23,12 @@
           alt=""
         />
       </div>
-      <div style="display: flex;justify-content: center;">
-
-        <h1 style="color: rgb(239, 78, 78)
-        ; font-weight: 7000;text-align: center;">Xin chào cổ đông</h1>
+      <div style="display: flex; justify-content: center">
+        <h1
+          style="color: rgb(137, 54, 54); font-weight: 7000; text-align: center"
+        >
+          Xin chào cổ đông
+        </h1>
       </div>
       <div class="col-md-12">
         <div class="col-md-12">
@@ -56,7 +59,6 @@
         </div>
       </div>
 
-     
       <div class="col-12">
         <button
           class="btn btn-primary"
@@ -70,19 +72,69 @@
   </body>
 </html>
 
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-    body {
-      padding: 100px;
-    }
-    form {
-      padding: 50px;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    }
-  </style>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 100px;
+  }
+  form {
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
 </style>
+<!-- script -->
+<script>
+  encryptPassword();
+  const passwordField = document.querySelector('input[name="password"]');
+  passwordField.addEventListener("change", () => {
+    console.log(passwordField.value);
+  });
+  function encryptPassword() {
+    const passwordField = document.querySelector('input[name="password"]');
+
+    const password = passwordField.value;
+    const key = CryptoJS.enc.Utf8.parse("secretkey1234567"); // key để mã hóa mật khẩu, có thể thay đổi
+    const iv = CryptoJS.enc.Utf8.parse("1234567890123456"); // initialization vector, có thể thay đổi
+    // Mã hóa mật khẩu sử dụng thuật toán AES với key và iv đã cho
+    const encryptedPassword = CryptoJS.AES.encrypt(password, key, {
+      iv: iv,
+      mode: CryptoJS.mode.CBC,
+      padding: CryptoJS.pad.Pkcs7,
+    });
+    // Mã hóa student_id sử dụng thuật toán AES với key và iv đã cho
+
+    // Gán mật khẩu đã mã hóa vào trường input
+    passwordField.value = encryptedPassword.toString();
+  }
+</script>
+
+<script>
+  (function () {
+    "use strict";
+
+    var forms = document.querySelectorAll(".needs-validation");
+
+    Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener(
+        "submit",
+        function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            // Mã hóa mật khẩu trước khi submit
+            encryptPassword();
+          }
+
+          form.classList.add("was-validated");
+        },
+        false
+      );
+    });
+  })();
+</script>
