@@ -1,0 +1,92 @@
+package view;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.FlowLayout;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import java.awt.Font;
+
+public class TableFrm extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					TableFrm frame = new TableFrm();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public TableFrm() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 371);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton.setBounds(43, 121, 93, 43);
+		contentPane.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("New button");
+		btnNewButton_1.setBounds(43, 185, 93, 43);
+		contentPane.add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("New button");
+		btnNewButton_2.setBounds(43, 244, 93, 43);
+		contentPane.add(btnNewButton_2);
+		
+		JButton btnNewButton_3 = new JButton("New button");
+		btnNewButton_3.setBounds(159, 244, 93, 43);
+		contentPane.add(btnNewButton_3);
+		
+		JButton btnNewButton_4 = new JButton("New button");
+		btnNewButton_4.setBounds(159, 185, 93, 43);
+		contentPane.add(btnNewButton_4);
+		
+		JButton btnNewButton_5 = new JButton("New button");
+		btnNewButton_5.setBounds(159, 121, 93, 43);
+		contentPane.add(btnNewButton_5);
+		
+		JButton btnNewButton_6 = new JButton("New button");
+		btnNewButton_6.setBounds(284, 121, 93, 43);
+		contentPane.add(btnNewButton_6);
+		
+		JButton btnNewButton_7 = new JButton("New button");
+		btnNewButton_7.setBounds(284, 185, 93, 43);
+		contentPane.add(btnNewButton_7);
+		
+		JButton btnNewButton_8 = new JButton("New button");
+		btnNewButton_8.setBounds(284, 244, 93, 43);
+		contentPane.add(btnNewButton_8);
+		
+		JLabel lblNewLabel = new JLabel("Chọn số bàn ");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 34));
+		lblNewLabel.setBounds(91, 48, 245, 43);
+		contentPane.add(lblNewLabel);
+	}
+}

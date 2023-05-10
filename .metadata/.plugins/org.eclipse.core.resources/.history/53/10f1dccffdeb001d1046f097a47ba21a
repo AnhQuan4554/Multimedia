@@ -1,0 +1,7 @@
+package dao;
+
+public class FoodDao extends DAO  {
+	public FoodDAO() {
+		super();
+	}
+}

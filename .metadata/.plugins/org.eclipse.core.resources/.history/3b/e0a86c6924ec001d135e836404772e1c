@@ -1,0 +1,12 @@
+package dao;
+
+import model.Food;
+
+public class orderDetailDAO extends DAO {
+	public orderDetailDAO() {
+		super();
+	}
+	public boolean addFood(Food f) {
+		String sqlAddFood = "INSERT INTO orderfood.table(idOrder, foodId, quantity, price) VALUES(?,?,?,?)";
+	}
+}

@@ -1,0 +1,38 @@
+package dao;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import model.Food;
+import model.orderDetail;
+
+public class orderDetailDAO extends DAO {
+	public orderDetailDAO() {
+		super();
+	}
+	public boolean addFood(orderDetail orderdetail) {
+		String sqlAddFood = "INSERT INTO orderfood.table(idOrder, foodId, quantity, price) VALUES(?,?,?,?)";
+		try{
+			
+			PreparedStatement ps = con.prepareStatement(sqlAddFood, Statement.RETURN_GENERATED_KEYS);
+			ps.setString(1, orderdetail.getIdOrder());
+			ps.setString(2, orderdetail.getFoodId());
+			ps.setInt(3, orderdetail.getQuantity());
+			ps.setInt(4, orderdetail.getPrice());
+			ResultSet rs = ps.executeQuery();
+			Food rm = new Food();
+			while(rs.next()){
+				
+				rm.setIdFood(rs.getString("idFood"));
+				rm.setFoodName(rs.getString("foodName"));
+				rm.setDes(rs.getString("describe"));
+				rm.setPrice(rs.getInt("price"));
+				result.add(rm);		
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		
+		}
+	}
+}

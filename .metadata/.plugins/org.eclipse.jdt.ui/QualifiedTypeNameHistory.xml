@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="dao.DAO"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="dao.TableDAO"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.protocol.x.SyncFlushDeflaterOutputStream"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="model.Food"/>
+    <fullyQualifiedTypeName name="java.beans.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="dao.FoodDao"/>
+    <fullyQualifiedTypeName name="model.orderDetail"/>
+    <fullyQualifiedTypeName name="model.Table"/>
+    <fullyQualifiedTypeName name="view.TableFrm"/>
+    <fullyQualifiedTypeName name="java.lang.InternalError"/>
+    <fullyQualifiedTypeName name="dao.orderDetailDAO"/>
+    <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="java.io.DataOutput"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="dao.OrderDAO"/>
+    <fullyQualifiedTypeName name="model.Order"/>
+    <fullyQualifiedTypeName name="view.ClientFrm"/>
+    <fullyQualifiedTypeName name="view.OrderFoodFrm"/>
+    <fullyQualifiedTypeName name="view.SuccessFrm"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+</qualifiedTypeNameHistroy>

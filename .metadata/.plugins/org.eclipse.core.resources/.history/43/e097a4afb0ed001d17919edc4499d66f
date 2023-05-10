@@ -1,0 +1,14 @@
+package model;
+
+import java.io.Serializable;
+
+public class orderDetail implements Serializable{
+	private String	 numberTable;
+	private String foodName;
+	private int quantity;
+	private int price;
+	public orderDetail() {
+		super();
+	}
+
+}
